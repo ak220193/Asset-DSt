@@ -7,6 +7,7 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="bg-white rounded-lg p-8 w-full max-w-[500px]">
+      <h1 className="text-3xl font-bold mb-6 text-center">Login</h1>
         <div className="mb-6">
           <label htmlFor="username" className="block text-sm font-semibold text-gray-600 mb-2">
             Username
@@ -31,8 +32,8 @@ const Login = () => {
             placeholder="Enter your password"
           />
         </div>
-        <button className="w-full bg-blue-400 text-white py-2 px-4 rounded hover:bg-mediumaquamarine h-16 w-[520px]">
-          Login
+        <button className="w-full bg-blue-400 text-white py-2 px-4 rounded hover:bg-mediumaquamarine h-16 w-[521px]  text-[20px] font-bold">
+          LOGIN
         </button>
       </div>
     </div>
