@@ -58,7 +58,7 @@ module.exports = {
       },
       spacing: {},
       fontFamily: {
-        poppins: "Poppins",
+        Roboto: "sans-serif",
       },
     },
     fontSize: {
