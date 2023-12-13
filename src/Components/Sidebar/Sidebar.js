@@ -33,13 +33,13 @@ const Sidebar = () => {
         </div>
        
         <button className="absolute top-[35%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-[18px] text-white font-poppins cursor-pointer text-center rounded"
-         style={{ backgroundColor: "#a93279" }}
+         style={{ backgroundColor: "#a93279", border:'#a93279' }}
         >
             <CiImport/>
             Import
         </button>
         <button className="absolute top-[45%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-center text-[18px] text-white font-poppins cursor-pointer rounded"
-         style={{ backgroundColor: "#a93279" }}
+         style={{ backgroundColor: "#a93279", border:'#a93279' }}
         >
             <CiExport/>
            Export
