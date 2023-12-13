@@ -7,10 +7,11 @@ import Navbar from "../../Components/Navbar/Navbar";
 const Dashboard = () => {
 
   return (
-
-      <div className="absolute top-[98px] left-[404px] rounded-31xl bg-white shadow-[0px_0px_15px_2px_rgba(241,_180,_187,_0.8)] w-[1850px] h-[950px] overflow-hidden text-center text-white">
-        <Sidebar/>
+    <div>
+<Sidebar/>
         <Navbar/>
+      <div className="absolute top-[98px] left-[404px] rounded-31xl bg-white shadow-[0px_0px_15px_2px_rgba(241,_180,_187,_0.8)] w-[1850px] h-[950px] overflow-hidden text-center text-white">
+        
         <div className="absolute top-[44px] left-[1229px] w-6 h-6 overflow-hidden" />
         <div className="absolute h-[10.32%] w-[18.54%] top-[9.32%] bottom-[80.36%]  rounded-6xl bg-palevioletred overflow-hidden text-9xl">
           <button className="relative w-40 h-16 text-slate-200 rounded text-5xl flex items-center justify-center ml-10"
@@ -46,6 +47,7 @@ const Dashboard = () => {
         <div className="absolute top-[408px] left-[998px] rounded-6xl bg-lightpink flex flex-row items-center justify-center py-[5px] px-5">
         <button className="relative w-40 h-10 text-white text-[20px] rounded ml-32"  style={{ backgroundColor: "#bc7986", border:'#bc7986' }}>Edit</button>
         </div>
+      </div>
       </div>
     
   );
