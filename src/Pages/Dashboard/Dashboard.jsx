@@ -2,14 +2,14 @@ import React from "react";
 import { CiCirclePlus } from "react-icons/ci";
 import { FaRegEdit } from "react-icons/fa";
 import Sidebar from "../../Components/Sidebar/Sidebar";
-import Navbar from "../../Components/Navbar/Navbar";
+import NavbarMain from "../../Components/Navbar/NavbarMain";
 
 const Dashboard = () => {
 
   return (
     <div>
 <Sidebar/>
-        <Navbar/>
+<NavbarMain/>
       <div className="absolute top-[98px] left-[404px] rounded-31xl bg-white shadow-[0px_0px_15px_2px_rgba(241,_180,_187,_0.8)] w-[1850px] h-[950px] overflow-hidden text-center text-white">
         
         <div className="absolute top-[44px] left-[1229px] w-6 h-6 overflow-hidden" />
