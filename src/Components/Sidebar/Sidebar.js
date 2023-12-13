@@ -5,8 +5,14 @@ import { FaHome } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { IoMdSettings } from "react-icons/io";
 import { IoIosLogOut } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        navigate('/')
+    }
     return (
     <div 
         className="absolute top-[calc(50%_-_538.5px)] left-[29px] rounded-31xl bg-white shadow-[4px_10px_15px_rgba(241,_180,_187,_0.8)] w-[340px] overflow-hidden text-black font-calibri h-[1050px] mt-4">
@@ -15,7 +21,7 @@ const Sidebar = () => {
           GVG - Plant
        </div>
 
-      <div className="absolute top-[992px] left-[78px] text-zinc-900 text-[24px]">
+      <div className="absolute top-[992px] left-[78px] text-zinc-900 text-[24px] cursor-pointer" onClick={handleLogout}>
         <IoIosLogOut style={{marginRight:'10px', marginBottom:'-3px'}}/>
         Logout
         </div>

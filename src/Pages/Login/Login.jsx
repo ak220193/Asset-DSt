@@ -38,7 +38,8 @@ const Login = () => {
             placeholder="Enter your password"
           />
         </div>
-        <button className="w-full bg-blue-400 text-white py-2 px-4 rounded hover:bg-mediumaquamarine h-16 w-[521px]  text-[20px] font-bold"
+        <button className="text-white py-2 px-4 rounded hover:bg-mediumaquamarine h-16 w-[521px]  text-[20px] font-bold cursor-pointer"
+        style={{ backgroundColor: "#a93279", border:'#a93279' }}
         onClick={handleLogin}
         >
           LOGIN
