@@ -2,6 +2,7 @@ import React from "react";
 import SidebarMain from "../../Components/Sidebar/SidebarMain";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 import { CiCirclePlus } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const DashboardMain = () => {
 
@@ -23,11 +24,11 @@ const DashboardMain = () => {
 
         <div className="mt-10 p-8 bg-gray-200 rounded-md">
           <div className="flex flex-wrap justify-center mt-[250px]">
-            <div className="flex mb-4 ">
-              <div className="bg-blue-900 text-white px-4 py-2 mr-4 w-[240px] h-[140px] rounded text-[25px] flex items-center justify-center">
-                East Assets
-              </div>
+          <Link to="/east-assets">
+            <div className="bg-blue-900 text-white px-4 py-2 mr-4 w-[240px] h-[140px] rounded text-[25px] flex items-center justify-center">
+              East Assets
             </div>
+          </Link>
             <div className="flex mb-4 ml-8">
               <div className="bg-blue-900 text-white px-4 py-2 mr-4 w-[240px] h-[140px] rounded text-[25px] flex items-center justify-center">
                 West Assets
