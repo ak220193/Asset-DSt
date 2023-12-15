@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 import { Link } from "react-router-dom";
 import SidebarEast from "../../Components/Sidebar/SidebarEast";
+import { CiCirclePlus } from "react-icons/ci";
 
 const EastAssets = () => {
   const [showSRegion, setShowSRegion] = useState(false);
@@ -20,8 +21,10 @@ const EastAssets = () => {
       <SidebarEast/>
       <NavbarMain/>
       <div className="absolute bg-mistyrose w-full h-[1070px] overflow-hidden text-left text-[16px] text-black  left-0">
-
         <div className="absolute top-[68px] left-[404px] rounded-31xl bg-white shadow-[4px_10px_15px_rgba(241,_180,_187,_0.8)] w-[1870px] h-[998px] overflow-hidden text-7xl">
+        <div className="absolute top-0 left-0 m-4 cursor-pointer ml-[1780px]">
+          <CiCirclePlus className="text-slate-950 font-bold text-[50px]"/>
+        </div>
           <div className="absolute top-[118px] left-[39px] w-[1225px] h-[851px]">
             <b className="absolute top-[4%] left-[51.8%] text-9xl cursor-pointer text-[30px]">
                 East Assets
@@ -75,19 +78,16 @@ const EastAssets = () => {
                   <div className="absolute top-[calc(60%_-_52px)] left-[calc(40%_-_84px)] font-semibold  w-[250px] text-[20px]">
                   <p className="m-0 text-white bg-blue-400 whitespace-nowrap">{`S - PLANT`}</p>
                     <p className="m-0 text-white bg-blue-400 whitespace-nowrap">{`S Facilities`}</p> 
-              </div>
-            </div>
-        
-          </div>
-                )}
                 </div>
-
-
+              </div>
+        
+              </div>
+            )}
+            </div>
         </div>
         <div className="absolute top-[654px] left-[393px] w-[100px] h-[100px] overflow-hidden" />
       </div>
     </div>
-   
   );
 };
 

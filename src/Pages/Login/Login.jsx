@@ -5,7 +5,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    navigate('/dashboard')
+    navigate('/dashboardMain')
   }
   return (
     <div className="flex items-center justify-center min-h-screen">
