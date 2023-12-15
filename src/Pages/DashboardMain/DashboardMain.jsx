@@ -10,7 +10,7 @@ const DashboardMain = () => {
     <div>
       <SidebarMain/>
       <NavbarMain/>
-      <div className="absolute top-[98px] left-[404px] rounded-31xl bg-white shadow-[0px_0px_15px_2px_rgba(241,_180,_187,_0.8)] w-[1850px] h-[950px] overflow-hidden text-center text-white ">
+        <div className="absolute top-[98px] left-[404px] rounded-31xl bg-white shadow-[0px_0px_15px_2px_rgba(241,_180,_187,_0.8)] w-[1850px] h-[950px] overflow-hidden text-center text-white ">
         <div className="absolute top-0 left-0 m-4 cursor-pointer ml-[1780px]">
           <CiCirclePlus className="text-slate-950 font-bold text-[50px]"/>
         </div>
