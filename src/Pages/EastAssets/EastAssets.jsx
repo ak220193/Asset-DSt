@@ -86,10 +86,12 @@ const EastAssets = () => {
                   className="relative rounded-6xl bg-cornflowerblue w-[290px] h-[84px] overflow-hidden shrink-0 cursor-pointer"
                 >
                   <div className="absolute top-[calc(60%_-_52px)] left-[calc(40%_-_84px)] font-semibold  w-[250px] text-[20px]">
+                  <Link to="/s-plant-facilities-assets">
                   <div className="bg-blue-400">
                     <p className="m-0 text-white bg-blue-400 whitespace-nowrap">{`S - PLANT`}</p>
                     <p className="m-0 text-white bg-blue-400 whitespace-nowrap mt-3">{`S Facilities`}</p> 
                 </div>
+                </Link>
                 </div>
               </div>
         
