@@ -12,7 +12,7 @@ const EastAssets = () => {
   const handleSRegionClick = () => {
     setShowSRegion(!showSRegion);
     setSRegionColor((prevColor) =>
-      prevColor === "bg-white" ? "bg-green-200" : "bg-white"
+      prevColor === "bg-white" ? "bg-green-200 rounded-2xl" : "bg-white"
     );
   };
 
@@ -50,7 +50,7 @@ const EastAssets = () => {
               <div className="absolute h-[60.11%] w-[78.61%] top-[34.67%] right-[21.39%] bottom-[12.22%] left-[25%] flex flex-row flex-wrap items-center justify-center gap-[138px] text-center text-9xl text-white  bg-green-200 rounded-2xl">
                 <div className="relative rounded-6xl bg-cornflowerblue w-[240px] h-[84px] overflow-hidden shrink-0">
                   <div className="absolute top-[calc(40%_-_32px)] left-[calc(50%_-_120px)] font-semibold w-[250px] mt-5 text-[20px]">
-                    <div className="bg-blue-400">
+                    <div className="bg-blue-400 rounded-2xl">
                     <p className="m-0 text-white bg-blue-400 whitespace-nowrap">{`S - ADMIN`}</p>
                     <p className="m-0 text-white bg-blue-400 whitespace-nowrap mt-3">{`S - Adminstration`}</p>
                   </div>
