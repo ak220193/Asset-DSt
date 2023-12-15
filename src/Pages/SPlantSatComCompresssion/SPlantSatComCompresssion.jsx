@@ -1,6 +1,6 @@
 import React from "react";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
-import SidebarSplantFacilities from "../../Components/Sidebar/SidebarSplantFacilities";
+import SidebarSplantSatCompression from "../../Components/Sidebar/SidebarSPlantSatCompression";
 
 const SPlantSatComCompresssion = () => {
   
@@ -8,7 +8,7 @@ const SPlantSatComCompresssion = () => {
   return (
     <div>
         <NavbarMain/>
-        <SidebarSplantFacilities/>
+        <SidebarSplantSatCompression/>
     <div className="relative bg-lavenderblush w-full h-[1070px] overflow-hidden text-left text-base text-black font-font">
       <div className="absolute top-[98px] left-[404px] rounded-31xl bg-white shadow-[4px_10px_15px_rgba(241,_180,_187,_0.8)] w-[1850px] h-[998px] overflow-hidden">
         <div className="absolute top-[80px] left-12 rounded-6xl bg-darkcyan-200 box-border w-[1766px] h-[863px] border-[4px] border-solid border-steelblue rounded-2xl" />
