@@ -2,6 +2,7 @@ import React from "react";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 import SidebarSplantFacilities from "../../Components/Sidebar/SidebarSplantFacilities";
 import { CiCirclePlus } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const SPlantFacilities = () => {
   
@@ -41,11 +42,13 @@ const SPlantFacilities = () => {
             className="relative rounded-6xl bg-cornflowerblue w-60 h-[215px] overflow-hidden shrink-0 cursor-pointer"
             //onClick={onFrameContainer6Click}
           >
+            <Link to='/s-plant-sat-com-compression'>
             <div className="absolute top-[calc(50%_-_53.5px)] left-[calc(50%_-_81px)] font-light bg-blue-800 rounded-xl w-[200px] h-[100px] text-[20px]  mt-3">
               <p className="m-0 text-white mt-3">S-PLANT-SAT-</p>
               <p className="m-0 text-white">COM</p>
               <p className="m-0 text-white mb-3">Compression</p>
             </div>
+            </Link>
           </div>
           <div className="relative rounded-6xl bg-cornflowerblue w-60 h-[215px] overflow-hidden shrink-0">
             <div className="absolute top-[calc(50%_-_53.5px)] left-[calc(50%_-_81px)] font-light bg-blue-800 rounded-xl w-[200px] h-[100px] text-[20px]  mt-3">
