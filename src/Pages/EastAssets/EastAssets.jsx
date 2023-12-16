@@ -29,12 +29,12 @@ const EastAssets = () => {
             <b className="absolute top-[4%] left-[51.8%] text-9xl cursor-pointer text-[30px]">
                 East Assets
             </b>
-            <Link to="/east-assets/a-region">
+            <Link>
               <div className="absolute h-[6.46%] w-[11.76%] top-[17.74%] right-[67.1%] bottom-[75.79%] left-[21.14%] rounded-6xl flex flex-row items-center justify-center py-2 px-[15px] box-border">
                 <div className="relative text-[23px]">A Region</div>
               </div>
             </Link>
-            <Link to="/east-assets/e-region">
+            <Link>
               <div className="absolute h-[6.46%] w-[11.43%] top-[17.74%] right-[43.76%] bottom-[75.79%] left-[54.82%] rounded-6xl flex flex-row items-center justify-center py-2 px-[15px] box-border">
                 <div className="relative text-[23px]">E Region</div>
               </div>

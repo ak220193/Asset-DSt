@@ -1,6 +1,7 @@
 import React from "react";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 import SidebarSplantSatCompression from "../../Components/Sidebar/SidebarSPlantSatCompression";
+import { Link } from "react-router-dom";
 
 const SPlantSatComCompresssion = () => {
   
@@ -35,10 +36,12 @@ const SPlantSatComCompresssion = () => {
               className="relative rounded-6xl bg-cornflowerblue w-[180px] h-[100px] overflow-hidden shrink-0 cursor-pointer"
             
             >
+              <Link to='/s-plant-ex-201-exchangePkg'>
               <div className="absolute top-[calc(50%_-_24px)] left-[calc(60%_-_65px)] font-semibold bg-blue-800 rounded-xl w-[140px]">
                 <p className="m-0 text-white mt-3">S-PLANT-EX-201</p>
                 <p className="m-0 text-white mb-3">Exchanger Package</p>
               </div>
+              </Link>
             </div>
             <div className="relative rounded-6xl bg-cornflowerblue w-[180px] h-[100px] overflow-hidden shrink-0">
               <div className="absolute top-[calc(50%_-_24px)] left-[calc(50%_-_67px)] font-semibold bg-blue-800 rounded-xl w-[140px]">

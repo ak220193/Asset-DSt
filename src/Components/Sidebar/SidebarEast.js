@@ -29,9 +29,9 @@ const SidebarEast = () => {
             S Region
         </div>
 
-      <div className="absolute top-[992px] left-[78px] text-zinc-900 text-[24px] cursor-pointer" onClick={handleLogout}>
-        <IoIosLogOut style={{marginRight:'10px', marginBottom:'-3px'}}/>
-        Logout
+        <div className="absolute top-[992px] left-[78px] text-zinc-900 text-[24px] cursor-pointer" onClick={handleLogout}>
+          <IoIosLogOut style={{marginRight:'10px', marginBottom:'-3px'}}/>
+          Logout
         </div>
         <div className="absolute top-[933px] left-[78px] text-zinc-900 text-[24px]">
             <IoMdSettings style={{marginRight:'10px', marginBottom:'-3px'}}/>
