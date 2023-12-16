@@ -1,6 +1,7 @@
 import React from "react";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 import SidebarSplantExchangerPkg from "../../Components/Sidebar/SidebarSPlantExchangerPkg";
+import { Link } from "react-router-dom";
 
 const SplantEx201ExchangePkg = () => {
 
@@ -38,6 +39,7 @@ const SplantEx201ExchangePkg = () => {
               </p>
               <p className="m-0 text-white">Stage 1 Aftercooler</p>
             </b>
+            <Link to='/s-plant-E201-CocontrolAndMonitor'>
             <div
               className="absolute top-[155px] left-[calc(50%_-_144.5px)] rounded-6xl bg-cornflowerblue w-[290px] h-[151px] overflow-hidden cursor-pointer rounded-2xl bg-blue-300"
             >
@@ -48,6 +50,7 @@ const SplantEx201ExchangePkg = () => {
                 <p className="m-0 text-black">Control and Monitor</p>
               </b>
             </div>
+            </Link>
           </div>
           <div className="relative rounded-6xl bg-deepskyblue w-[379px] h-[339px] overflow-hidden shrink-0 rounded-2xl bg-blue-800 text-[20px]">
             <b className="absolute top-[37px] left-[102px]">

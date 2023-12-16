@@ -7,6 +7,7 @@ import EastAssets from './Pages/EastAssets/EastAssets';
 import SPlantFacilities from './Pages/SPlantFacilities/SPlantFacilities';
 import SPlantSatComCompresssion from './Pages/SPlantSatComCompresssion/SPlantSatComCompresssion';
 import SplantEx201ExchangePkg from './Pages/SPlantEx201ExchangerPkg/SPlantEx201ExchangerPkg';
+import SPlantE201CoControlAndMonitor from './Pages/SPlantE201CoControlAndMonitor/SPlantE201CoControlAndMonitor';
 // import Sidebar from './Components/Sidebar/Sidebar';
 // import Navbar from './Components/Navbar/Navbar';
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/s-plant-facilities-assets" element={<SPlantFacilities />} />
         <Route path="/s-plant-sat-com-compression" element={<SPlantSatComCompresssion />} />
         <Route path="/s-plant-ex-201-exchangePkg" element={<SplantEx201ExchangePkg />} />
+        <Route path="/s-plant-E201-CocontrolAndMonitor" element={<SPlantE201CoControlAndMonitor />} />
       </Routes>
     </Router>
   );
