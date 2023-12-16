@@ -31,7 +31,7 @@ const SidebarE201CoControlAndMonitor = () => {
             <span>East Assets</span>
             <div className="flex items-center ml-5 mt-[-158px]">
                 <IoIosPlay className="mb-[-4px] mr-4 mt-[-225px]"/>
-                <span className="text-[20px] mt-[-195px] ml-[-9px]">S-Assets</span>
+                <span className="text-[20px] mt-[-195px] ml-[-9px]">S-Region</span>
                 <div className="flex items-center ml-[-66px] text-[20px] mt-12">
                     <IoIosPlay className="mb-[-4px] mt-[-155px]"/>
                     <span  className="mt-[-100px] ml-2">S-Plant-S-Facilities</span>
@@ -54,7 +54,6 @@ const SidebarE201CoControlAndMonitor = () => {
                 </div>
             </div>
         </div>
-
       <div className="absolute top-[992px] left-[78px] text-zinc-900 text-[24px] cursor-pointer" onClick={handleLogout}>
         <IoIosLogOut style={{marginRight:'10px', marginBottom:'-3px'}}/>
         Logout

@@ -30,7 +30,7 @@ const SidebarSplantSatCompression = () => {
             <span>East Assets</span>
             <div className="flex items-center ml-5 mt-[-118px]">
                 <IoIosPlay className="mb-[-4px] mr-4 mt-[-65px]"/>
-                <span className="text-[20px] mt-[-35px] ml-[-9px]">S-Assets</span>
+                <span className="text-[20px] mt-[-35px] ml-[-9px]">S-Region</span>
                 <div className="flex items-center ml-[-66px] text-[20px] mt-12">
                     <IoIosPlay className="mb-[-4px] mt-[35px]"/>
                     <span  className="mt-16 ml-2">S-Plant-S-Facilities</span>

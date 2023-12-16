@@ -58,7 +58,7 @@ const EastAssets = () => {
                 </div>
 
                 <div className="relative rounded-6xl bg-cornflowerblue w-[290px] h-[84px] overflow-hidden shrink-0 rounded-2xl bg-blue-800">
-                  <div className="absolute top-[calc(50%_-_32px)] left-[calc(50%_-_75px)] font-semibold  w-[250px] text-[20px]">
+                  <div className="absolute top-[calc(50%_-_32px)] left-[calc(35%_-_75px)] font-semibold  w-[250px] text-[20px]">
                   <div >
                     <p className="m-0 text-white  whitespace-nowrap mt-3">{`S - FIELD`}</p>
                     <p className="m-0 text-white whitespace-nowrap mb-3">{`S Fields`}</p>
@@ -67,7 +67,7 @@ const EastAssets = () => {
                 </div>
                 
                 <div className="relative rounded-6xl bg-cornflowerblue w-[240px] h-[84px] overflow-hidden shrink-0  rounded-2xl bg-blue-800">
-                  <div className="absolute top-[calc(30%_-_22px)] left-[calc(50%_-_98px)] font-semibold  w-[250px] text-[20px]">
+                  <div className="absolute top-[calc(30%_-_22px)] left-[calc(38%_-_98px)] font-semibold  w-[250px] text-[20px]">
                   <div>
                     <p className="m-0 text-white  whitespace-nowrap mt-3">{`S - GEN`}</p>
                     <p className="m-0 text-white  whitespace-nowrap mb-3">{`S General`}</p>
@@ -75,7 +75,7 @@ const EastAssets = () => {
                   </div>
                 </div>
                 <div className="relative rounded-6xl bg-cornflowerblue w-[290px] h-[84px] overflow-hidden shrink-0  rounded-2xl bg-blue-800">
-                  <div className="absolute top-[calc(30%_-_22px)] left-[calc(50%_-_86px)] font-semibold  w-[250px]  text-[20px]">
+                  <div className="absolute top-[calc(30%_-_22px)] left-[calc(35%_-_86px)] font-semibold  w-[250px]  text-[20px]">
                     <div>
                     <p className="m-0 text-white  whitespace-nowrap mt-3">{`S - PIP`}</p>
                     <p className="m-0 text-white whitespace-nowrap mb-3">{`S Pipelines`}</p>    

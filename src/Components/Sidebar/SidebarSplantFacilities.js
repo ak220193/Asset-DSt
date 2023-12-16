@@ -29,13 +29,13 @@ const SidebarSplantFacilities = () => {
             <IoIosPlay className="mb-[-4px] mr-4"/>
             <span>East Assets</span>
             <div className="flex items-center ml-5 mt-[-38px]">
-                <IoIosPlay className="mb-[-4px] mr-4 mt-[-65px]"/>
-                <span className="text-[20px] mt-[-35px] ml-[-9px]">S-Assets</span>
+                <IoIosPlay className="mb-[-4px] mr-4 mt-[-115px]"/>
+                <span className="text-[20px] mt-[-80px] ml-[-9px]">S-Region</span>
                 <div className="flex items-center ml-[-66px] text-[20px] mt-12">
-                    <IoIosPlay className="mb-[-4px] mt-[35px]"/>
-                    <span  className="mt-16 ml-2">S-Plant-S-Facilities</span>
+                    <IoIosPlay className="mb-[-4px] mt-[-15px]"/>
+                    <span  className="mt-[15px] ml-2">S-Plant-S-Facilities</span>
                     <div className="flex items-center ml-[-86px] text-[20px] mt-12">
-                        <IoIosPlay className="mb-[-4px] mt-[95px] ml-[-25px]"/>
+                        <IoIosPlay className="mb-[-4px] mt-[85px] ml-[-25px]"/>
                         <span className="mt-[119px] ml-2">S-Plant-SAT-S-Satellite</span>
                     </div>
                 </div>
