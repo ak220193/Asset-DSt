@@ -1,7 +1,9 @@
 import React from "react";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 import { CiCirclePlus } from "react-icons/ci";
+import { FaArrowLeft } from "react-icons/fa";
 import SidebarE201CoControlAndMonitor from "../../Components/Sidebar/SidebarE201CoControlAndMonitor";
+import { Link } from "react-router-dom";
 
 const SPlantE201CoControlAndMonitor = () => {
   
@@ -16,6 +18,9 @@ const SPlantE201CoControlAndMonitor = () => {
         <div className="absolute top-[120px] left-[calc(35%_-_612px)] rounded-6xl bg-darkcyan-200 box-border w-[1765px] h-[763px] border-[4px] border-solid border-steelblue bg-green-100" />
         <div className="absolute top-0 left-0 m-4 cursor-pointer ml-[1780px]">
           <CiCirclePlus className="text-slate-950 font-bold text-[50px]"/>
+        </div>
+        <div className="absolute top-0 left-0 m-4 cursor-pointer">
+          <Link to='/s-plant-ex-201-exchangePkg'><FaArrowLeft className="text-slate-500 font-lighter text-[30px]"/></Link>
         </div>
         <div className="absolute top-[359px] left-[82px] w-[1162px] h-[280px]">
         

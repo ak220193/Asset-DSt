@@ -2,6 +2,8 @@ import React from "react";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 import SidebarSplantExchangerPkg from "../../Components/Sidebar/SidebarSPlantExchangerPkg";
 import { Link } from "react-router-dom";
+import { CiCirclePlus } from "react-icons/ci";
+import { FaArrowLeft } from "react-icons/fa";
 
 const SplantEx201ExchangePkg = () => {
 
@@ -12,6 +14,13 @@ const SplantEx201ExchangePkg = () => {
     <div className="relative bg-lavenderblush w-full h-[1060px] overflow-hidden text-left text-9xl text-black font-poppins">
       <div className="absolute top-[98px] left-[388px] rounded-31xl bg-white shadow-[4px_10px_15px_rgba(241,_180,_187,_0.8)] w-[1852px] h-[961px] overflow-hidden text-center">
         <div className="absolute top-[120px] left-6 rounded-6xl bg-darkcyan-200 box-border w-[1805px] h-[863px] border-[4px] border-solid border-steelblue bg-green-100" />
+        
+        <div className="absolute top-0 left-0 m-4 cursor-pointer ml-[1780px]">
+          <CiCirclePlus className="text-slate-950 font-bold text-[50px]"/>
+        </div>
+        <div className="absolute top-0 left-0 m-4 cursor-pointer">
+          <Link to='/s-plant-sat-com-compression'><FaArrowLeft className="text-slate-500 font-lighter text-[30px]"/></Link>
+        </div>
         <b
           className="absolute top-[calc(50%_-_347px)] left-[calc(55%_-_143px)] cursor-pointer text-[25px]"
 

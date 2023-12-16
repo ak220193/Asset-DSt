@@ -39,11 +39,11 @@ const SidebarEast = () => {
             <Link to="/dashboardMain" style={linkStyle}>
                 East Assets
             </Link>
-            <div className="flex items-center ml-5 mt-[-38px] cursor-pointer">
+            {/* <div className="flex items-center ml-5 mt-[-38px] cursor-pointer">
                 <IoIosPlay className="mb-[-4px] mr-4 mt-[45px]"/>
                 <span className="text-[20px] mt-[44px] ml-[-9px]">S-Region</span>
                 
-            </div>
+            </div> */}
         </div>
 
         <div className="absolute top-[992px] left-[78px] text-zinc-900 text-[24px] cursor-pointer" onClick={handleLogout}>

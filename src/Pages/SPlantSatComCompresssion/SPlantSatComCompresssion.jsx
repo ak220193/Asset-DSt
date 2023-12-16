@@ -2,6 +2,8 @@ import React from "react";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 import SidebarSplantSatCompression from "../../Components/Sidebar/SidebarSPlantSatCompression";
 import { Link } from "react-router-dom";
+import { CiCirclePlus } from "react-icons/ci";
+import { FaArrowLeft } from "react-icons/fa";
 
 const SPlantSatComCompresssion = () => {
   
@@ -14,6 +16,12 @@ const SPlantSatComCompresssion = () => {
       <div className="absolute top-[98px] left-[404px] rounded-31xl bg-white shadow-[4px_10px_15px_rgba(241,_180,_187,_0.8)] w-[1850px] h-[998px] overflow-hidden">
         <div className="absolute top-[80px] left-12 rounded-6xl bg-darkcyan-200 box-border w-[1766px] h-[863px] border-[4px] border-solid border-steelblue rounded-2xl" />
     
+        <div className="absolute top-0 left-0 m-4 cursor-pointer ml-[1780px]">
+          <CiCirclePlus className="text-slate-950 font-bold text-[50px]"/>
+        </div>
+        <div className="absolute top-0 left-0 m-4 cursor-pointer">
+          <Link to='/s-plant-facilities-assets'><FaArrowLeft className="text-slate-500 font-lighter text-[30px]"/></Link>
+        </div>
         <b
           className="absolute top-[calc(50%_-_343px)] left-[calc(50%_-_230px)] cursor-pointer text-[28px]"
           

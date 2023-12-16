@@ -2,6 +2,7 @@ import React from "react";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 import SidebarSplantFacilities from "../../Components/Sidebar/SidebarSplantFacilities";
 import { CiCirclePlus } from "react-icons/ci";
+import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SPlantFacilities = () => {
@@ -16,6 +17,9 @@ const SPlantFacilities = () => {
       <div className="absolute top-[98px] left-[404px] rounded-31xl shadow-[4px_10px_15px_rgba(241,_180,_187,_0.8)] w-[1850px] h-[998px] overflow-hidden text-center text-3xl text-white bg-green-50">
       <div className="absolute top-0 left-0 m-4 cursor-pointer ml-[1780px]">
           <CiCirclePlus className="text-slate-950 font-bold text-[50px]"/>
+        </div>
+        <div className="absolute top-0 left-0 m-4 cursor-pointer">
+          <Link to='/east-assets'><FaArrowLeft className="text-slate-500 font-lighter text-[30px]"/></Link>
         </div>
         <div>
             <div className="absolute top-[140px] left-[764px] text-[26px] font-semibold text-steelblue bg-green-200 w-[350px] rounded-2xl h-28 mt-5">
