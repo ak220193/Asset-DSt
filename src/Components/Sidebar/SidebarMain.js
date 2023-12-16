@@ -24,7 +24,7 @@ const SidebarMain = () => {
         <GiPathDistance className="mr-2 mb-[-3px]"/>
           Path
         </b>
-        <div className="absolute top-[146px] text-[25px] ml-2">
+        <div className="absolute top-[146px] text-[25px] ml-6">
             <IoIosPlay className="mb-[-4px] mr-4"/>
             Assets
         </div>
@@ -38,13 +38,13 @@ const SidebarMain = () => {
             Settings
         </div>
        
-        <button className="absolute top-[35%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-[18px] text-white font-poppins cursor-pointer text-center rounded"
+        <button className="absolute top-[65%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-[18px] text-white font-poppins cursor-pointer text-center rounded"
          style={{ backgroundColor: "#0d8041", border:'#0d8041' }}
         >
             <CiImport/>
             Import
         </button>
-        <button className="absolute top-[45%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-center text-[18px] text-white font-poppins cursor-pointer rounded"
+        <button className="absolute top-[75%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-center text-[18px] text-white font-poppins cursor-pointer rounded"
          style={{ backgroundColor: "#58bf87", border:'#58bf87' }}
         >
             <CiExport/>

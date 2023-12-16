@@ -3,7 +3,7 @@ import { CiImport } from "react-icons/ci";
 import { CiExport } from "react-icons/ci";
 import { IoMdSettings } from "react-icons/io";
 import { IoIosLogOut } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GiPathDistance } from "react-icons/gi";
 import { IoIosPlay } from "react-icons/io";
 
@@ -12,6 +12,11 @@ const SidebarEast = () => {
 
     const handleLogout = () => {
         navigate('/')
+    }
+    const linkStyle = {
+      color: "inherit",
+      textDecoration: "none",
+      cursor: "pointer",
     }
     return (
     <div 
@@ -24,27 +29,39 @@ const SidebarEast = () => {
         <GiPathDistance className="mr-2 mb-[-3px]"/>
           Path
         </b>
-        <div className="absolute top-[146px] text-[25px] ml-2">
+        {/* <div className="absolute top-[146px] text-[25px] ml-6 mt-5">
             <IoIosPlay className="mb-[-4px] mr-4"/>
             S Region
+        </div> */}
+
+          <div className="absolute top-[146px] text-[25px] ml-2 ">
+            <IoIosPlay className="mb-[-4px] mr-4"/>
+            <Link to="/dashboardMain" style={linkStyle}>
+                East Assets
+            </Link>
+            <div className="flex items-center ml-5 mt-[-38px] cursor-pointer">
+                <IoIosPlay className="mb-[-4px] mr-4 mt-[45px]"/>
+                <span className="text-[20px] mt-[44px] ml-[-9px]">S-Region</span>
+                
+            </div>
         </div>
 
         <div className="absolute top-[992px] left-[78px] text-zinc-900 text-[24px] cursor-pointer" onClick={handleLogout}>
-          <IoIosLogOut style={{marginRight:'10px', marginBottom:'-3px'}}/>
-          Logout
+        <IoIosLogOut style={{marginRight:'10px', marginBottom:'-3px'}}/>
+        Logout
         </div>
         <div className="absolute top-[933px] left-[78px] text-zinc-900 text-[24px]">
             <IoMdSettings style={{marginRight:'10px', marginBottom:'-3px'}}/>
             Settings
         </div>
        
-        <button className="absolute top-[35%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-[18px] text-white font-poppins cursor-pointer text-center rounded"
+        <button className="absolute top-[65%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-[18px] text-white font-poppins cursor-pointer text-center rounded"
          style={{ backgroundColor: "#0d8041", border:'#0d8041' }}
         >
             <CiImport/>
             Import
         </button>
-        <button className="absolute top-[45%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-center text-[18px] text-white font-poppins cursor-pointer rounded"
+        <button className="absolute top-[75%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-center text-[18px] text-white font-poppins cursor-pointer rounded"
          style={{ backgroundColor: "#58bf87", border:'#58bf87' }}
         >
             <CiExport/>

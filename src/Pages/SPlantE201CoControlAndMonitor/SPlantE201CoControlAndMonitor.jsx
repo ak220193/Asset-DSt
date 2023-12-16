@@ -1,15 +1,14 @@
 import React from "react";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 import { CiCirclePlus } from "react-icons/ci";
-import SidebarE202CoControlAndMonitor from "../../Components/Sidebar/SidebarE202CoControlAndMonitor";
+import SidebarE201CoControlAndMonitor from "../../Components/Sidebar/SidebarE201CoControlAndMonitor";
 
 const SPlantE201CoControlAndMonitor = () => {
   
-
   return (
     <div>
         <NavbarMain/>
-        <SidebarE202CoControlAndMonitor/>
+        <SidebarE201CoControlAndMonitor/>
     <div className="relative bg-lavenderblush w-full h-[1060px] overflow-hidden text-left text-5xl text-white font-poppins">
       <div className="absolute top-[98px] left-[388px] rounded-31xl bg-white shadow-[4px_10px_15px_rgba(241,_180,_187,_0.8)] w-[1862px] h-[998px] overflow-hidden text-center">
         

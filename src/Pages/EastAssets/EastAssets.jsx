@@ -47,49 +47,49 @@ const EastAssets = () => {
               <div className="relative text-[23px]">S Region</div>
             </div>
             {showSRegion && (
-              <div className="absolute h-[60.11%] w-[78.61%] top-[34.67%] right-[21.39%] bottom-[12.22%] left-[25%] flex flex-row flex-wrap items-center justify-center gap-[138px] text-center text-9xl text-white  bg-green-200 rounded-2xl">
-                <div className="relative rounded-6xl bg-cornflowerblue w-[240px] h-[84px] overflow-hidden shrink-0">
-                  <div className="absolute top-[calc(40%_-_32px)] left-[calc(50%_-_120px)] font-semibold w-[250px] mt-5 text-[20px]">
-                    <div className="bg-blue-400 rounded-2xl">
-                    <p className="m-0 text-white bg-blue-400 whitespace-nowrap">{`S - ADMIN`}</p>
-                    <p className="m-0 text-white bg-blue-400 whitespace-nowrap mt-3">{`S - Adminstration`}</p>
-                  </div>
+              <div className="absolute h-[69.11%] w-[78.61%] top-[30.67%] right-[21.39%] bottom-[12.22%] left-[25%] flex flex-row flex-wrap items-center justify-center gap-[138px] text-center text-9xl text-white  bg-green-200 rounded-2xl">
+                <div className="relative rounded-6xl bg-cornflowerblue w-[240px] h-[84px] overflow-hidden shrink-0 rounded-2xl bg-blue-800">
+                  <div className="absolute top-[calc(40%_-_32px)] left-[calc(50%_-_120px)] font-semibold w-[250px] text-[20px]">
+                   
+                    <p className="m-0 text-white whitespace-nowrap mt-3">{`S - ADMIN`}</p>
+                    <p className="m-0 text-white  whitespace-nowrap mb-3">{`S - Adminstration`}</p>
+                 
                   </div>
                 </div>
 
-                <div className="relative rounded-6xl bg-cornflowerblue w-[290px] h-[84px] overflow-hidden shrink-0">
-                  <div className="absolute top-[calc(50%_-_32px)] left-[calc(50%_-_75px)] font-semibold  w-[250px] mt-4 text-[20px]">
-                  <div className="bg-blue-400">
-                    <p className="m-0 text-white bg-blue-400 whitespace-nowrap">{`S - FIELD`}</p>
-                    <p className="m-0 text-white bg-blue-400 whitespace-nowrap mt-3">{`S Fields`}</p>
+                <div className="relative rounded-6xl bg-cornflowerblue w-[290px] h-[84px] overflow-hidden shrink-0 rounded-2xl bg-blue-800">
+                  <div className="absolute top-[calc(50%_-_32px)] left-[calc(50%_-_75px)] font-semibold  w-[250px] text-[20px]">
+                  <div >
+                    <p className="m-0 text-white  whitespace-nowrap mt-3">{`S - FIELD`}</p>
+                    <p className="m-0 text-white whitespace-nowrap mb-3">{`S Fields`}</p>
                   </div>
                   </div>
                 </div>
                 
-                <div className="relative rounded-6xl bg-cornflowerblue w-[240px] h-[84px] overflow-hidden shrink-0">
-                  <div className="absolute top-[calc(30%_-_22px)] left-[calc(50%_-_98px)] font-semibold  w-[250px] mt-5 text-[20px]">
-                  <div className="bg-blue-400">
-                    <p className="m-0 text-white bg-blue-400 whitespace-nowrap">{`S - GEN`}</p>
-                    <p className="m-0 text-white bg-blue-400 whitespace-nowrap mt-3">{`S General`}</p>
+                <div className="relative rounded-6xl bg-cornflowerblue w-[240px] h-[84px] overflow-hidden shrink-0  rounded-2xl bg-blue-800">
+                  <div className="absolute top-[calc(30%_-_22px)] left-[calc(50%_-_98px)] font-semibold  w-[250px] text-[20px]">
+                  <div>
+                    <p className="m-0 text-white  whitespace-nowrap mt-3">{`S - GEN`}</p>
+                    <p className="m-0 text-white  whitespace-nowrap mb-3">{`S General`}</p>
                   </div>
                   </div>
                 </div>
-                <div className="relative rounded-6xl bg-cornflowerblue w-[290px] h-[84px] overflow-hidden shrink-0">
-                  <div className="absolute top-[calc(30%_-_22px)] left-[calc(50%_-_86px)] font-semibold  w-[250px] mt-5 text-[20px]">
-                    <div className="bg-blue-400">
-                    <p className="m-0 text-white bg-blue-400 whitespace-nowrap">{`S - PIP`}</p>
-                    <p className="m-0 text-white bg-blue-400 whitespace-nowrap mt-3">{`S Pipelines`}</p>    
+                <div className="relative rounded-6xl bg-cornflowerblue w-[290px] h-[84px] overflow-hidden shrink-0  rounded-2xl bg-blue-800">
+                  <div className="absolute top-[calc(30%_-_22px)] left-[calc(50%_-_86px)] font-semibold  w-[250px]  text-[20px]">
+                    <div>
+                    <p className="m-0 text-white  whitespace-nowrap mt-3">{`S - PIP`}</p>
+                    <p className="m-0 text-white whitespace-nowrap mb-3">{`S Pipelines`}</p>    
                   </div>
                   </div>
                 </div>
                 <div
-                  className="relative rounded-6xl bg-cornflowerblue w-[290px] h-[84px] overflow-hidden shrink-0 cursor-pointer"
+                  className="relative rounded-6xl bg-cornflowerblue w-[290px] h-[84px] overflow-hidden shrink-0 cursor-pointer  rounded-2xl bg-blue-800"
                 >
                   <div className="absolute top-[calc(60%_-_52px)] left-[calc(40%_-_84px)] font-semibold  w-[250px] text-[20px]">
                   <Link to="/s-plant-facilities-assets">
-                  <div className="bg-blue-400">
-                    <p className="m-0 text-white bg-blue-400 whitespace-nowrap">{`S - PLANT`}</p>
-                    <p className="m-0 text-white bg-blue-400 whitespace-nowrap mt-3">{`S Facilities`}</p> 
+                  <div>
+                    <p className="m-0 text-white  whitespace-nowrap mt-3">{`S - PLANT`}</p>
+                    <p className="m-0 text-white whitespace-nowrap mb-3">{`S Facilities`}</p> 
                 </div>
                 </Link>
                 </div>

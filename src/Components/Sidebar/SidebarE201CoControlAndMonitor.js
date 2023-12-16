@@ -7,10 +7,11 @@ import { useNavigate } from "react-router-dom";
 import { GiPathDistance } from "react-icons/gi";
 import { IoIosPlay } from "react-icons/io";
 
-const SidebarE202CoControlAndMonitor = () => {
+const SidebarE201CoControlAndMonitor = () => {
     const navigate = useNavigate();
 
     const handleLogout = () => {
+        console.log("Logging out"); 
         navigate('/')
     }
     return (
@@ -79,4 +80,4 @@ const SidebarE202CoControlAndMonitor = () => {
     )
 }
 
-export default SidebarE202CoControlAndMonitor;
+export default SidebarE201CoControlAndMonitor;
