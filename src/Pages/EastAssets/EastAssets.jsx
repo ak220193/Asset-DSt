@@ -22,7 +22,7 @@ const EastAssets = () => {
       <SidebarEast/>
       <NavbarMain/>
       <div className="absolute bg-mistyrose w-full h-[1070px] overflow-hidden text-left text-[16px] text-black  left-0">
-        <div className="absolute top-[68px] left-[404px] rounded-31xl bg-white shadow-[4px_10px_15px_rgba(241,_180,_187,_0.8)] w-[1870px] h-[998px] overflow-hidden text-7xl">
+        <div className="absolute top-[68px] left-[404px] rounded-31xl bg-white shadow-[4px_10px_15px_rgba(241,_180,_187,_0.8)] w-[100%] h-[998px] overflow-hidden text-7xl">
         <div className="absolute top-0 left-0 m-4 cursor-pointer ml-[1780px]">
           <CiCirclePlus className="text-slate-950 font-bold text-[50px]"/>
         </div>
