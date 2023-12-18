@@ -16,7 +16,9 @@ const EastAssets = () => {
   const [showSRegion, setShowSRegion] = useState(false);
   const [sRegionColor, setSRegionColor] = useState("bg-white");
   const [showDropdown, setShowDropdown] = useState(false);
-  const [showModal, setShowModal] = React.useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [showAddModal, setShowAddModal] = useState(false);
+  // const [name, setName] = useState('');
 
   const handlePlusClick = () => {
     setShowDropdown(!showDropdown);
@@ -68,18 +70,132 @@ const EastAssets = () => {
                 
                 
                 <div className="absolute cursor-pointer mt-[-510px] ml-[880px]">
-                  <CiCirclePlus className="text-slate-500 font-bold text-[30px]"/>
+                  <CiCirclePlus className="text-slate-500 font-bold text-[30px]" onClick={() => setShowAddModal(true)}/>
                 </div>
+
+                {showAddModal ? (
+                      <>
+                      <div className="bg-slate-900">
+                        <div
+                          className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                        >
+                          <div className="relative my-6 mx-auto w-[620px]">
+
+                            <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-black outline-none focus:outline-none">
+                           
+                              <div className="flex items-start justify-between p-5 ">
+                                <h3 className="text-3xl font-semibold">
+                                  Create 
+                                </h3>
+                                <button
+                                  className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                  onClick={() => setShowAddModal(false)}
+                                >
+                                  <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                    ×
+                                  </span>
+                                </button>
+                              </div>
+                               <div className="mb-4">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-360px]">
+                                  Location:
+                                </label>
+                                <input
+                                  type="text"
+                                  id="location"
+                                  name="location"
+                                  //value={location}
+                                  //onChange={(e) => setName(e.target.value)}
+                                  className="mt-1 p-2 border border-gray-300 rounded-md w-[400px]"
+                                />
+                              </div>
+                              <div className="mb-4">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-360px]">
+                                  Description:
+                                </label>
+                                <input
+                                  type="text"
+                                  id="description"
+                                  name="description"
+                                  //value={description}
+                                  //onChange={(e) => setName(e.target.value)}
+                                  className="mt-1 p-2 border border-gray-300 rounded-md w-[400px]"
+                                />
+                              </div>
+                              <div className="mb-4">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-360px]">
+                                  Parent:
+                                </label>
+                                <input
+                                  type="text"
+                                  id="parent"
+                                  name="parent"
+                                  //value={parent}
+                                  //onChange={(e) => setName(e.target.value)}
+                                  className="mt-1 p-2 border border-gray-300 rounded-md w-[400px]"
+                                />
+                              </div>
+                              <div className="mb-4">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-360px]">
+                                  System:
+                                </label>
+                                <input
+                                  type="text"
+                                  id="system"
+                                  name="system"
+                                  //value={system}
+                                  //onChange={(e) => setName(e.target.value)}
+                                  className="mt-1 p-2 border border-gray-300 rounded-md w-[400px]"
+                                />
+                              </div>
+                              <div className="mb-4">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-360px]">
+                                  Level:
+                                </label>
+                                <input
+                                  type="text"
+                                  id="level"
+                                  name="level"
+                                  //value={level}
+                                  //onChange={(e) => setName(e.target.value)}
+                                  className="mt-1 p-2 border border-gray-300 rounded-md w-[400px]"
+                                />
+                              </div>
+              
+                              <div className="flex items-center justify-end p-6">
+                                <button
+                                  className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 h-10" 
+                                  type="button"
+                                  onClick={() => setShowAddModal(false)}
+                                >
+                                  Cancel
+                                </button>
+                                <button
+                                  className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                  type="button"
+                                  onClick={() => setShowAddModal(false)}
+                                >
+                                  Create
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                        </div>
+                      </>
+                    ) : null}
+
                 <div className="relative rounded-6xl bg-cornflowerblue w-[240px] h-[94px] overflow-hidden shrink-0 rounded-2xl bg-blue-800">
                 
                   <div className="absolute top-[calc(40%_-_32px)] left-[calc(50%_-_120px)] font-semibold w-[250px] text-[20px]">
-                  <div className="absolute text-blue-800  cursor-pointer" onClick={handlePlusClick}>
-                    <BsThreeDots className="font-lighter text-[30px] ml-1 hover:text-green-50"/>
+                  <div className="absolute text-blue-800  cursor-pointer ml-[200px]" onClick={handlePlusClick}>
+                    <BsThreeDots className="font-lighter text-[30px] hover:text-green-50"/>
                   </div>
                   <div className={`dropdown ${showDropdown ? 'visible' : 'hidden'}`} >
-                    <p className="m-0 text-white whitespace-nowrap mt-3 cursor-pointer" onClick={() => setShowModal(true)}><MdDeleteOutline/></p>
+                    <p className="m-0 text-white whitespace-nowrap mt-3 cursor-pointer" onClick={() => setShowDeleteModal(true)}><MdDeleteOutline/></p>
 
-                    {showModal ? (
+                    {showDeleteModal ? (
                       <>
                       <div className="bg-slate-900">
                         <div
@@ -95,7 +211,7 @@ const EastAssets = () => {
                                 </h3>
                                 <button
                                   className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                                  onClick={() => setShowModal(false)}
+                                  onClick={() => setShowDeleteModal(false)}
                                 >
                                   <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                     ×
@@ -113,14 +229,14 @@ const EastAssets = () => {
                                 <button
                                   className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 h-10" 
                                   type="button"
-                                  onClick={() => setShowModal(false)}
+                                  onClick={() => setShowDeleteModal(false)}
                                 >
                                   No
                                 </button>
                                 <button
                                   className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                   type="button"
-                                  onClick={() => setShowModal(false)}
+                                  onClick={() => setShowDeleteModal(false)}
                                 >
                                   Yes
                                 </button>
