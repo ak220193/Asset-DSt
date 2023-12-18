@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 import { Link } from "react-router-dom";
 import SidebarEast from "../../Components/Sidebar/SidebarEast";
@@ -7,17 +6,18 @@ import { CiCirclePlus } from "react-icons/ci";
 import { FaArrowLeft } from "react-icons/fa";
 import { MdDeleteOutline } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
-import { CiRead } from "react-icons/ci";
-import { IoIosAddCircle } from "react-icons/io";
+// import { CiRead } from "react-icons/ci";
+// import { IoIosAddCircle } from "react-icons/io";
 import { BsThreeDots } from "react-icons/bs";
 
 
 const EastAssets = () => {
   const [showSRegion, setShowSRegion] = useState(false);
-  const [sRegionColor, setSRegionColor] = useState("bg-white");
+  const [sRegionColor, setSRegionColor] = useState("bg-green-50");
   const [showDropdown, setShowDropdown] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [showAddModal, setShowAddModal] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
   // const [name, setName] = useState('');
 
   const handlePlusClick = () => {
@@ -27,7 +27,7 @@ const EastAssets = () => {
   const handleSRegionClick = () => {
     setShowSRegion(!showSRegion);
     setSRegionColor((prevColor) =>
-      prevColor === "bg-white" ? "bg-green-200 rounded-2xl" : "bg-white"
+      prevColor === "bg-green-50" ? "bg-green-200 rounded-2xl" : "bg-green-50"
     );
   };
 
@@ -66,7 +66,7 @@ const EastAssets = () => {
               <div className="relative text-[23px]">S Region</div>
             </div>
             {showSRegion && (
-              <div className="absolute h-[72.11%] w-[78.61%] top-[25.67%] right-[21.39%] bottom-[12.22%] left-[15%] flex flex-row flex-wrap items-center justify-center gap-[138px] text-center text-9xl text-white  bg-green-200 rounded-2xl">
+              <div className="absolute h-[72.11%] w-[78.61%] top-[25.67%] right-[21.39%] bottom-[12.22%] left-[13%] flex flex-row flex-wrap items-center justify-center gap-[138px] text-center text-9xl text-white  bg-green-200 rounded-2xl">
                 
                 
                 <div className="absolute cursor-pointer mt-[-510px] ml-[1100px]">
@@ -250,13 +250,130 @@ const EastAssets = () => {
                     ) : null}
 
 
-                    <p className="m-0 text-white whitespace-nowrap"><CiEdit/></p>
-                    <p className="m-0 text-white whitespace-nowrap"><CiRead/></p>
-                    <p className="m-0 text-white whitespace-nowrap mb-3"><IoIosAddCircle/></p>
+                    <p className="m-0 text-white whitespace-nowrap" onClick={() => setShowEditModal(true)}><CiEdit/></p>
+
+                    {showEditModal ? (
+                      <>
+                      <div className="bg-slate-900">
+                        <div
+                          className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                        >
+                          <div className="relative my-6 mx-auto w-[800px]">
+
+                            <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-black outline-none focus:outline-none">
+                           
+                              <div className="flex items-start justify-between p-5 ">
+                                <h3 className="text-3xl font-semibold">
+                                  Edit 
+                                </h3>
+                                <button
+                                  className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                  onClick={() => setShowEditModal(false)}
+                                >
+                                  <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                    ×
+                                  </span>
+                                </button>
+                              </div>
+                               <div className="mb-4">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-700px]">
+                                  Location:
+                                </label>
+                                <input
+                                  type="text"
+                                  id="location"
+                                  name="location"
+                                  //value={location}
+                                  //onChange={(e) => setName(e.target.value)}
+                                  className="mt-1 ml-[-50px] p-2 border border-gray-300 rounded-md w-[700px]"
+                                />
+                              </div>
+                              <div className="mb-4 mt-5">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-690px]">
+                                  Description:
+                                </label>
+                                <input
+                                  type="text"
+                                  id="description"
+                                  name="description"
+                                  //value={description}
+                                  //onChange={(e) => setName(e.target.value)}
+                                  className="mt-1 ml-[-50px] p-2 border border-gray-300 rounded-md w-[700px]"
+                                />
+                              </div>
+                              <div className="mb-4 mt-5">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-715px]">
+                                  Parent:
+                                </label>
+                                <input
+                                  type="text"
+                                  id="parent"
+                                  name="parent"
+                                  //value={parent}
+                                  //onChange={(e) => setName(e.target.value)}
+                                  className="mt-1 ml-[-50px] p-2 border border-gray-300 rounded-md w-[700px]"
+                                />
+                              </div>
+                              <div className="mb-4 mt-5">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-715px]">
+                                  System:
+                                </label>
+                                <input
+                                  type="text"
+                                  id="system"
+                                  name="system"
+                                  //value={system}
+                                  //onChange={(e) => setName(e.target.value)}
+                                  className="mt-1 ml-[-50px] p-2 border border-gray-300 rounded-md w-[700px]"
+                                />
+                              </div>
+                              <div className="mb-4 mt-5">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-715px]">
+                                  Level:
+                                </label>
+                                <input
+                                  type="text"
+                                  id="level"
+                                  name="level"
+                                  //value={level}
+                                  //onChange={(e) => setName(e.target.value)}
+                                  className="mt-1 ml-[-50px] p-2 border border-gray-300 rounded-md w-[700px]"
+                                />
+                              </div>
+              
+                              <div className="flex items-center justify-end p-6">
+                                <button
+                                  className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 h-10" 
+                                  type="button"
+                                  onClick={() => setShowEditModal(false)}
+                                >
+                                  Cancel
+                                </button>
+                                <button
+                                  className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                  type="button"
+                                  onClick={() => setShowEditModal(false)}
+                                >
+                                  Update
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                        </div>
+                      </>
+                    ) : null}
+
+                    {/* <p className="m-0 text-white whitespace-nowrap"><CiRead/></p> */}
+                    {/* <p className="m-0 text-white whitespace-nowrap mb-3"><IoIosAddCircle/></p> */}
                   </div>
-                   
-                    <p className="m-0 text-white whitespace-nowrap mt-3">{`S - ADMIN`}</p>
-                    <p className="m-0 text-white  whitespace-nowrap mb-3">{`S - Adminstration`}</p>
+                  {!showDropdown && (
+                    <>
+                      <p className="m-0 text-white whitespace-nowrap mt-3">{`S - ADMIN`}</p>
+                      <p className="m-0 text-white whitespace-nowrap mb-3">{`S - Adminstration`}</p>
+                    </>
+                  )}
                  
                   </div>
                 </div>
