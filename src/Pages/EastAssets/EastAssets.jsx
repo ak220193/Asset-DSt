@@ -15,6 +15,7 @@ const EastAssets = () => {
   const [showSRegion, setShowSRegion] = useState(false);
   const [sRegionColor, setSRegionColor] = useState("bg-green-50");
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showDropDownSPlantSFac, setShowDropDownSPlantSFac] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [showAddModal, setShowAddModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
@@ -30,6 +31,11 @@ const EastAssets = () => {
       prevColor === "bg-green-50" ? "bg-green-200 rounded-2xl" : "bg-green-50"
     );
   };
+
+  const handlePlusSPlantSFacClick = () => {
+    console.log("ssss");
+    setShowDropDownSPlantSFac(!showDropDownSPlantSFac)
+  }
 
 
   return (
@@ -403,18 +409,79 @@ const EastAssets = () => {
                   </div>
                   </div>
                 </div>
-                <div
-                  className="relative rounded-6xl bg-cornflowerblue w-[290px] h-[84px] overflow-hidden shrink-0 cursor-pointer  rounded-2xl bg-blue-800"
-                >
+                <div className="relative rounded-6xl bg-cornflowerblue w-[290px] h-[84px] overflow-hidden shrink-0 cursor-pointer  rounded-2xl bg-blue-800">
                   <div className="absolute top-[calc(60%_-_52px)] left-[calc(40%_-_84px)] font-semibold  w-[250px] text-[20px]">
-                  <Link to="/s-plant-facilities-assets">
-                  <div>
-                    <p className="m-0 text-white  whitespace-nowrap mt-3">{`S - PLANT`}</p>
-                    <p className="m-0 text-white whitespace-nowrap mb-3">{`S Facilities`}</p> 
+                    <div className="absolute text-blue-800  cursor-pointer ml-[200px]" onClick={handlePlusSPlantSFacClick}>
+                      <BsThreeDots className="font-lighter text-[30px] hover:text-green-50"/>
+                    </div>
+                    {/* <Link to="/s-plant-facilities-assets"> */}
+
+                    <div className={`dropdown ${showDropDownSPlantSFac ? 'visible' : 'hidden'}`} >
+                      <p className="m-0 text-white whitespace-nowrap mt-3 cursor-pointer" onClick={() => setShowDeleteModal(true)}><MdDeleteOutline/></p>
+                      {showDeleteModal ? (
+                      <>
+                      <div className="bg-slate-900">
+                        <div
+                          className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                        >
+                          <div className="relative my-6 mx-auto w-[520px]">
+
+                            <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-black outline-none focus:outline-none">
+                           
+                              <div className="flex items-start justify-between p-5 ">
+                                <h3 className="text-3xl font-semibold">
+                                  Delete 
+                                </h3>
+                                <button
+                                  className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                  onClick={() => setShowDeleteModal(false)}
+                                >
+                                  <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                    ×
+                                  </span>
+                                </button>
+                              </div>
+                             
+                              <div className="relative p-6 flex-auto">
+                                <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
+                                 Are you sure you want to delete?
+                                </p>
+                              </div>
+              
+                              <div className="flex items-center justify-end p-6">
+                                <button
+                                  className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 h-10" 
+                                  type="button"
+                                  onClick={() => setShowDeleteModal(false)}
+                                >
+                                  No
+                                </button>
+                                <button
+                                  className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                  type="button"
+                                  onClick={() => setShowDeleteModal(false)}
+                                >
+                                  Yes
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                        </div>
+                      </>
+                    ) : null}
+                    </div>
+                    <Link to="/s-plant-facilities-assets">
+                    {!showDropDownSPlantSFac && (
+                    <>
+                        <p className="m-0 text-white  whitespace-nowrap mt-3">{`S - PLANT`}</p>
+                        <p className="m-0 text-white whitespace-nowrap mb-3">{`S Facilities`}</p> 
+                      </>
+                    )}
+                    </Link>
+                  </div>
                 </div>
-                </Link>
-                </div>
-              </div>
               </div>
             )}
             </div>
