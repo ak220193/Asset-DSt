@@ -44,32 +44,32 @@ const EastAssets = () => {
         <div className="absolute top-0 left-0 m-4 cursor-pointer">
           <Link to='/dashboardMain'><FaArrowLeft className="text-slate-500 font-lighter text-[30px]"/></Link>
         </div>
-          <div className="absolute top-[118px] left-[39px] w-[1225px] h-[851px]">
+          <div className="absolute top-[98px] left-[189px] w-[1525px] h-[859px] bg-green-50">
             <b className="absolute top-[4%] left-[51.8%] text-9xl cursor-pointer text-[30px]">
                 East Assets
             </b>
             <Link>
-              <div className="absolute h-[6.46%] w-[11.76%] top-[17.74%] right-[67.1%] bottom-[75.79%] left-[21.14%] rounded-6xl flex flex-row items-center justify-center py-2 px-[15px] box-border">
+              <div className="absolute h-[6.46%] w-[11.76%] top-[17.74%] right-[67.1%] bottom-[75.79%] left-[5.14%] rounded-6xl flex flex-row items-center justify-center py-2 px-[15px] box-border">
                 <div className="relative text-[23px]">A Region</div>
               </div>
             </Link>
             <Link>
-              <div className="absolute h-[6.46%] w-[11.43%] top-[17.74%] right-[43.76%] bottom-[75.79%] left-[54.82%] rounded-6xl flex flex-row items-center justify-center py-2 px-[15px] box-border">
+              <div className="absolute h-[6.46%] w-[11.43%] top-[17.74%] right-[43.76%] bottom-[75.79%] left-[40.82%] rounded-6xl flex flex-row items-center justify-center py-2 px-[15px] box-border">
                 <div className="relative text-[23px]">E Region</div>
               </div>
             </Link>
             
             <div
               onClick={handleSRegionClick}
-              className={`absolute h-[6.46%] w-[11.43%] top-[17.74%] right-[43.76%] bottom-[75.79%] left-[94.82%] rounded-6xl flex flex-row items-center justify-center py-2 px-[15px] box-border cursor-pointer text-black  ${sRegionColor}`}
+              className={`absolute h-[6.46%] w-[11.43%] top-[17.74%] right-[43.76%] bottom-[75.79%] left-[84.82%] rounded-6xl flex flex-row items-center justify-center py-2 px-[15px] box-border cursor-pointer text-black  ${sRegionColor}`}
             >
               <div className="relative text-[23px]">S Region</div>
             </div>
             {showSRegion && (
-              <div className="absolute h-[72.11%] w-[78.61%] top-[30.67%] right-[21.39%] bottom-[12.22%] left-[25%] flex flex-row flex-wrap items-center justify-center gap-[138px] text-center text-9xl text-white  bg-green-200 rounded-2xl">
+              <div className="absolute h-[72.11%] w-[78.61%] top-[25.67%] right-[21.39%] bottom-[12.22%] left-[15%] flex flex-row flex-wrap items-center justify-center gap-[138px] text-center text-9xl text-white  bg-green-200 rounded-2xl">
                 
                 
-                <div className="absolute cursor-pointer mt-[-510px] ml-[880px]">
+                <div className="absolute cursor-pointer mt-[-510px] ml-[1100px]">
                   <CiCirclePlus className="text-slate-500 font-bold text-[30px]" onClick={() => setShowAddModal(true)}/>
                 </div>
 
@@ -79,7 +79,7 @@ const EastAssets = () => {
                         <div
                           className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
                         >
-                          <div className="relative my-6 mx-auto w-[620px]">
+                          <div className="relative my-6 mx-auto w-[800px]">
 
                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-black outline-none focus:outline-none">
                            
@@ -97,7 +97,7 @@ const EastAssets = () => {
                                 </button>
                               </div>
                                <div className="mb-4">
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-360px]">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-700px]">
                                   Location:
                                 </label>
                                 <input
@@ -106,11 +106,11 @@ const EastAssets = () => {
                                   name="location"
                                   //value={location}
                                   //onChange={(e) => setName(e.target.value)}
-                                  className="mt-1 p-2 border border-gray-300 rounded-md w-[400px]"
+                                  className="mt-1 ml-[-50px] p-2 border border-gray-300 rounded-md w-[700px]"
                                 />
                               </div>
-                              <div className="mb-4">
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-360px]">
+                              <div className="mb-4 mt-5">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-690px]">
                                   Description:
                                 </label>
                                 <input
@@ -119,11 +119,11 @@ const EastAssets = () => {
                                   name="description"
                                   //value={description}
                                   //onChange={(e) => setName(e.target.value)}
-                                  className="mt-1 p-2 border border-gray-300 rounded-md w-[400px]"
+                                  className="mt-1 ml-[-50px] p-2 border border-gray-300 rounded-md w-[700px]"
                                 />
                               </div>
-                              <div className="mb-4">
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-360px]">
+                              <div className="mb-4 mt-5">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-715px]">
                                   Parent:
                                 </label>
                                 <input
@@ -132,11 +132,11 @@ const EastAssets = () => {
                                   name="parent"
                                   //value={parent}
                                   //onChange={(e) => setName(e.target.value)}
-                                  className="mt-1 p-2 border border-gray-300 rounded-md w-[400px]"
+                                  className="mt-1 ml-[-50px] p-2 border border-gray-300 rounded-md w-[700px]"
                                 />
                               </div>
-                              <div className="mb-4">
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-360px]">
+                              <div className="mb-4 mt-5">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-715px]">
                                   System:
                                 </label>
                                 <input
@@ -145,11 +145,11 @@ const EastAssets = () => {
                                   name="system"
                                   //value={system}
                                   //onChange={(e) => setName(e.target.value)}
-                                  className="mt-1 p-2 border border-gray-300 rounded-md w-[400px]"
+                                  className="mt-1 ml-[-50px] p-2 border border-gray-300 rounded-md w-[700px]"
                                 />
                               </div>
-                              <div className="mb-4">
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-360px]">
+                              <div className="mb-4 mt-5">
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 ml-[-715px]">
                                   Level:
                                 </label>
                                 <input
@@ -158,7 +158,7 @@ const EastAssets = () => {
                                   name="level"
                                   //value={level}
                                   //onChange={(e) => setName(e.target.value)}
-                                  className="mt-1 p-2 border border-gray-300 rounded-md w-[400px]"
+                                  className="mt-1 ml-[-50px] p-2 border border-gray-300 rounded-md w-[700px]"
                                 />
                               </div>
               
