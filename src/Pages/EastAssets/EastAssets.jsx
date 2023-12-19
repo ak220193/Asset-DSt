@@ -51,7 +51,7 @@ const EastAssets = () => {
           <CiCirclePlus className="text-slate-950 font-bold text-[50px]"/>
         </div> */}
         <div className="absolute top-0 left-0 m-4 cursor-pointer">
-          <Link to='/dashboardMain'><FaArrowLeft className="text-slate-500 font-lighter text-[30px]"/></Link>
+          <Link to='/assets'><FaArrowLeft className="text-slate-500 font-lighter text-[30px]"/></Link>
         </div>
           <div className="absolute top-[98px] left-[189px] w-[1525px] h-[859px] bg-green-50">
             <b className="absolute top-[4%] left-[51.8%] text-9xl cursor-pointer text-[30px]">

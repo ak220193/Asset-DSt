@@ -3,6 +3,7 @@ import SidebarMain from "../../Components/Sidebar/SidebarMain";
 import NavbarMain from "../../Components/Navbar/NavbarMain";
 //import { CiCirclePlus } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
 const DashboardMain = () => {
 
@@ -14,6 +15,9 @@ const DashboardMain = () => {
         {/* <div className="absolute top-0 left-0 m-4 cursor-pointer ml-[1780px]">
           <CiCirclePlus className="text-slate-950 font-bold text-[50px]"/>
         </div> */}
+        <div className="absolute top-0 left-0 m-4 cursor-pointer">
+          <Link to='/dashboard'><FaArrowLeft className="text-slate-500 font-lighter text-[30px]"/></Link>
+        </div>
         <div className="absolute top-[44px] left-[1229px] w-6 h-6 overflow-hidden" />
         <div className="absolute h-[10.32%] w-[18.54%] top-[9.32%] bottom-[80.36%]  rounded-6xl bg-palevioletred overflow-hidden text-9xl"></div>
         <div>
