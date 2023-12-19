@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/dashboardMain" element={<DashboardMain />} />
+        <Route path="/assets" element={<DashboardMain />} />
         <Route path="/east-assets" element={<EastAssets />} />
         <Route path="/s-plant-facilities-assets" element={<SPlantFacilities />} />
         <Route path="/s-plant-sat-com-compression" element={<SPlantSatComCompresssion />} />
