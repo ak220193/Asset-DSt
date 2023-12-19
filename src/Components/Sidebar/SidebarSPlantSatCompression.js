@@ -55,14 +55,14 @@ const SidebarSplantSatCompression = () => {
             Settings
         </div>
        
-        <button className="absolute top-[65%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-[18px] text-white font-poppins cursor-pointer text-center rounded"
-         style={{ backgroundColor: "#0d8041", border:'#0d8041' }}
+        <button className="absolute top-[65%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-[18px] text-white font-poppins cursor-pointer text-center rounded  bg-blue-800 border-blue-800"
+         //style={{ backgroundColor: "#0d8041", border:'#0d8041' }}
         >
             <CiImport/>
             Import
         </button>
-        <button className="absolute top-[75%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-center text-[18px] text-white font-poppins cursor-pointer rounded"
-         style={{ backgroundColor: "#58bf87", border:'#58bf87' }}
+        <button className="absolute top-[75%] left-[30%] transform translate(-50%, -50%) rounded-31xl bg-rose-pink flex flex-row items-center justify-start py-2.5 px-5 gap-[9px] text-center text-[18px] text-white font-poppins cursor-pointer rounded  bg-blue-800 border-blue-800"
+         //style={{ backgroundColor: "#58bf87", border:'#58bf87' }}
         >
             <CiExport/>
            Export
